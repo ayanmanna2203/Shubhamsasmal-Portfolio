@@ -1,0 +1,53 @@
+header {
+    z-index: 40;
+    background-color: rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(10px);
+}
+
+
+aside {
+    position: sticky;
+    top: 20px;
+    align-self: flex-start;
+    width: 160px;
+    z-index: 10;
+}
+#readblogheader{
+    line-height: 50px;
+}
+#blogcontent{
+    line-height: 30px;
+}
+
+
+@media (max-width: 640px) {
+    aside {
+        display: none;
+    }
+    #readblogheader h1 p{
+        font-size: 40px;
+        
+    }
+    
+}
+
+@media(min-width:700px){
+    #hero{
+        display: flex;
+       justify-content: space-between;
+        gap: 30px;
+    }
+}
+
+  .slider-track {
+    animation: slide 30s linear infinite ;
+  }
+  /* pause when the user hovers */
+  .slider-track:hover {
+    animation-play-state: paused;
+  }
+  @keyframes slide {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-800%); }
+  }
+
